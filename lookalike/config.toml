@@ -2,3 +2,4 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "DataDog"
 theme = "dataDogRep"
+customCss = ["style.css"]
