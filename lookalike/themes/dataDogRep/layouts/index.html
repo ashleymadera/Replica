@@ -9,36 +9,48 @@
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <!-- <link rel="stylesheet" href="static/css/style.css"> -->
   <style>
+    [class*="side-bar"] {
+      list-style-type: none;
+    }
+
     [class*="col"] {
-      /* background-color: lightblue; */
-      margin: 2px;
+
+      padding: 0px;
     }
 
-    [class*="content-col-1"] {
-      /* background-color: lightblue; */
-      margin: 2px;
-      min-width: 457px;
-      max-width: 457px;
-    }
+    /* 
+    [class*="col-5 "] {
+      max-width: 557px;
 
+    }
+ */
     [class*="row"] {
-      margin: 2px;
+      margin-bottom: 30px;
+      margin-left: 0;
+      margin-right: 0;
+
+    }
+
+    [class*="bottom-content"] {
+      margin: 10px;
     }
 
     [class*="col-2 content"] {
       background-color: #724EEF;
-      margin: 2px;
+      margin: 15px;
       max-width: 166px;
     }
 
     [class*="vl"] {
       border-left: 2px solid gray;
-      height: 250px;
+      height: 410px;
     }
 
     [class*='bg-overlay'] {
-      background: linear-gradient(rgba(20, 208, 113, .8), rgba(20, 208, 113, .8)), url("https://i.imgur.com/KjZsiZT.png");
+      background: linear-gradient(rgba(20, 208, 113, .8), rgba(20, 208, 113, .8)), url("/images/Screen Shot 2018-11-08 at 3.15.38 PM (1).png");
       background-repeat: no-repeat;
+      margin: 0;
+      max-width: 557px;
       height: 300px;
       display: flex;
       color: #fff;
@@ -48,19 +60,57 @@
     }
 
     [class*='bg-overlay 1'] {
-      background: linear-gradient(rgba(255, 99, 90, .8), rgba(255, 99, 90, .8)), url("https://i.imgur.com/KjZsiZT.png");
+      background: linear-gradient(rgba(255, 99, 90, .8), rgba(255, 99, 90, .8)), url("/images/Screen Shot 2018-11-08 at 3.12.26 PM (1).png");
       background-repeat: no-repeat;
+      max-width: 557px;
       height: 300px;
-
       color: #fff;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      margin: 0px;
     }
 
+    [class*='bg-overlay 2'] {
+      background: linear-gradient(rgba(43, 42, 167, .8), rgba(43, 42, 167, .8)), url("/images/Screen Shot 2018-11-08 at 3.11.08 PM (1).png");
+      mix-blend-mode: multiply;
+      background-repeat: no-repeat;
+      max-width: 557px;
+      height: 300px;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0px;
+    }
 
-    [class*='row text-center'] {
+    [class*="observability"] {
+      background-color: rgb(245, 245, 245);
+      max-width: 557px;
+    }
+
+    [class*="pricing"] {
+      background-color: rgb(245, 245, 245);
+      height: 461px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    [class*="package-list"] {
+      display: flex;
+      justify-content: center;
+    }
+
+    [class*="options"] {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    [class*='text-center'] {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -68,9 +118,7 @@
     }
 
     [class*='image-bg'] {
-
       background-color: #000;
-
     }
 
     [class*='img-container'] {
@@ -80,8 +128,22 @@
     }
 
     [class*="client-portfolio"] {
+      /* display: grid; */
       display: flex;
+      flex-direction: row;
       flex-wrap: wrap;
+      min-width: 557px;
+      max-width: 570px;
+    }
+
+    [class*="col-with-box"] {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    [class*="col-with-client"] {
+      margin: 0px;
+      padding: 0px;
     }
 
     [class*='client-tile'] {
@@ -96,6 +158,8 @@
     [class*='client-tile-1'] {
       height: 184px;
       width: 186px;
+      display: flex;
+
       justify-content: center;
       align-items: center;
       background-color: rgb(255, 90, 95);
@@ -104,28 +168,107 @@
     [class*='client-tile-2'] {
       height: 184px;
       width: 186px;
+      display: flex;
       justify-content: center;
       align-items: center;
       background-color: rgb(41, 41, 41);
     }
+
+    [class*='client-tile-3'] {
+      height: 184px;
+      width: 186px;
+      display: flex;
+
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(20, 40, 160);
+    }
+
+    [class*='client-tile-4'] {
+      height: 184px;
+      width: 186px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(0, 170, 78);
+    }
+
+    [class*='client-tile-5'] {
+      height: 184px;
+      width: 186px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(93, 189, 95);
+    }
+
+    [class*='client-tile-6'] {
+      height: 184px;
+      width: 186px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(0, 0, 0);
+    }
+
+    [class*='client-tile-7'] {
+      height: 184px;
+      width: 186px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(0, 168, 224);
+    }
+
+    [class*='client-tile-lg'] {
+      height: 368px;
+      width: 372px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 24px;
+      background-color: rgb(245, 245, 245);
+    }
+
 
 
     [class*='tile-img'] {
       height: 35px;
       width: 113.16px;
     }
+
+    [class*='tile-img-lg'] {
+      height: 19px;
+      width: 106.16px;
+      margin-bottom: 10px;
+    }
+
+    [class*='tile-sam-ng'] {
+      display: flex;
+      flex-direction: row;
+    }
+
+    [class*='tile-whole-att'] {
+      display: flex;
+      flex-direction: row;
+    }
+
+    [class*='tile-with-client'] {
+      width: 372px;
+    }
   </style>
 </head>
 
 <body>
 
-  <div class="container-fluid">
+  <div class="container-fixed">
     <div class="row">
       <div class="col-2 content">
         <div>
           <img src="/images/dd_logo_v_white.png" style="height: 100px;" class="figure-img img rounded" alt="...">
 
-          <ul>
+          <ul class="side-bar">
             <li>Product</li>
             <li>doc</li>
             <li>pricing</li>
@@ -145,62 +288,73 @@
             <button>TRY FREE</button>
           </div>
           <div class="col-6 pricing">
-            <div class="row">
-              <div class="col">
-                <header>INFRASTRUCTURE</header>
-                <p>Starting at
-                  <br>
-                  <span>$15</span>
-                  <br>
-                  Per host, per month*</p>
-                <ul>Centralize your monitoring of systems and services</ul>
-                <li>250 + integrations</li>
-                <li>Out-of-the dashboards</li>
-                <li>15-month metri retention</li>
-                <a href="">See Details</a>
+            <div class="row package-list">
+              <div class="col options">
+                <div>
+                  <header>INFRASTRUCTURE</header>
+                  <p>Starting at
+                    <br>
+                    <span>$15</span>
+                    <br>
+                    Per host, per month*</p>
+                  <ul>Centralize your monitoring of systems and services</ul>
+                  <li>250 + integrations</li>
+                  <li>Out-of-the dashboards</li>
+                  <li>15-month metri retention</li>
+                </div>
+                <div>
+                  <a class="details" href="">See Details</a>
+                </div>
               </div>
 
               <div class="vl"></div>
-              <div class="col">
-                <header>APM</header>
-                <p>Starting at
-                  <br>
-                  <span>$31</span>
-                  <br>
-                  Per host, per month*</p>
-                <ul>Centralize your monitoring of systems and services</ul>
-                <li>Java, Ruby, Python, Go, Node, and more</li>
-                <li> Out-of-the-box application health dashboards</li>
-                <li>1 million trace events per host included</li>
-                <a href="">See Details</a>
-
+              <div class="col options">
+                <div>
+                  <header>APM</header>
+                  <p>Starting at
+                    <br>
+                    <span>$31</span>
+                    <br>
+                    Per host, per month*</p>
+                  <ul>Centralize your monitoring of systems and services</ul>
+                  <li>Java, Ruby, Python, Go, Node, and more</li>
+                  <li> Out-of-the-box application health dashboards</li>
+                  <li>1 million trace events per host included</li>
+                </div>
+                <div>
+                  <a class="details" href="">See Details</a>
+                </div>
               </div>
               <div class="vl"></div>
-              <div class="col">
-                <header>LOGS MANAGEMENT</header>
-                <p>Starting at
-                  <br>
-                  <span>$1.27</span>
-                  <br>
-                  Per host, per month*</p>
-                <ul>Collect from any source</ul>
-                <li>– Collect from any source</li>
-                <li>Automated & custom processing</li>
-                <li>Fully integrated with Infrastructure and APM</li>
-                <a href="">See Details</a>
+              <div class="col options-3">
+                <div>
+                  <header>LOGS MANAGEMENT</header>
+                  <p>Starting at
+                    <br>
+                    <span>$1.27</span>
+                    <br>
+                    Per host, per month*</p>
+                  <ul>Collect from any source</ul>
+                  <li>– Collect from any source</li>
+                  <li>Automated & custom processing</li>
+                  <li>Fully integrated with Infrastructure and APM</li>
+                </div>
+                <div>
+                  <a class="details" href="">See Details</a>
+                </div>
 
               </div>
+
             </div>
-
           </div>
         </div>
-        <div class="row">
-          <div class="col-5-fluid content-col-1">content col 1
+        <div class="row bottom-content">
+          <div class="col-5" width=557px>
             <!-- first image -->
             <div class="row">
               <div class="container bg-overlay">
                 <div class="row text-center">
-                  <p>INFRASTRUCTURE</p>
+                  <p>APM</p>
                   <h3>Get full visibility into modern applications</h3>
                 </div>
               </div>
@@ -210,61 +364,84 @@
             <div class="row">
               <div class="container bg-overlay 1">
                 <div class="row-fluid text-center">
-                  <p>APM</p>
-                  <h3>See across systems, apps, and services</h3>
+                  <p>LOGS MANAGEMENT</p>
+                  <h3>Analyze and explore log data in context</h3>
                 </div>
               </div>
             </div>
 
 
 
-            <div class="client-portfolio">
-              <div class="client-tile-1">
-                <img src="/images/Group 3 (1).png" class="figure-img tile-img " alt="...">
+            <div class="row no-gutters client-portfolio">
+              <div class="col-with-boxes">
+                <div class="client-tile-1">
+                  <img src="/images/Group 3 (1).png" class="figure-img tile-img " alt="airbnb logo">
+                </div>
+                <div class="client-tile">
+                  <img src="/images/Group 19 (1).png" class="figure-img tile-img " alt="peleton logo">
+                </div>
+                <div class="client-tile-2">
+                  <img src="/images/Group 74.png" class="figure-img tile-img " alt="evernote logo">
+                </div>
+                <div class="client-tile-5">
+                  <img src="/images/pageduty copy.png" class="figure-img tile-img " alt="paperduty logo">
+                </div>
               </div>
-              <div class="client-tile">
-                <img src="/images/Group 19 (1).png" class="figure-img tile-img " alt="...">
+              <div class="col-with-client">
+                <div class="client-tile-lg">
+                  <img src="/images/adroll-logo-2x.png" class="figure-img tile-img-lg " alt="adroll logo">
+                  <p>“Datadog has been instrumental in managing our real-time infrastructure, globally distributed in
+                    5
+                    data centers across hundreds of instances, and thousands of different metrics and dimensions for
+                    each
+                    host. I can't believe there was a time when we didn't have Datadog.”
+                    <br>
+                    <span>Valentino Volonghi</span>
+                    <br>
+                    Chief Technology Officer
+                  </p>
+                  <a href="">See More Stories</a>
+                </div>
+                <div class="tile-sam-ng">
+                  <div class="client-tile-3">
+                    <img src="/images/Group 3 (2).png" class="figure-img tile-img " alt="samsung logo">
+                  </div>
+                  <div class="client-tile-4">
+                    <img src="/images/Group 15.png" class="figure-img tile-img " alt="NGINX logo">
+                  </div>
+                </div>
+                <div class="tile-whole-att">
+                  <div class="client-tile-6">
+                    <img src="/images/Group 18.png" class="figure-img tile-img " alt="wholefoods logo">
+                  </div>
+                  <div class="client-tile-7">
+                    <img src="/images/Group 7.png" class="figure-img tile-img " alt="att logo">
+                  </div>
+                </div>
               </div>
-              <div class="client-tile-2">
-                <img src="/images/Group 74.png" class="figure-img tile-img " alt="...">
-              </div>
-              <div class="client-tile"></div>
-              <div class="client-tile"></div>
-              <div class="client-tile"></div>
-              <div class="client-tile"></div>
-              <div class="client-tile"></div>
             </div>
-
-
-
-
-
-
-
           </div>
 
 
-
-
-
-          <div class="col-fluid content-col-1"> content col 2
-            <!-- https://i.imgur.com/9CQ6xaT.jpg -->
-            <div class="container bg-overlay 1">
-              <div class="row text-center">
-                <p>APM</p>
-                <h3>See across systems, apps, and services</h3>
+          <div class="col-5" width=557px>
+            <div class="row">
+              <div class="container bg-overlay 2">
+                <div class="row text-center">
+                  <p>INFRASTRUCTURE</p>
+                  <h3>See across systems, apps, and services</h3>
+                </div>
               </div>
             </div>
-
-            <div class="container">
-              <div>
-                <h5 class="title">Observability</h5>
-                <p class="text">With turn-key integrations, Datadog seamlessly aggregates metrics and events across
-                  the
-                  full devops stack</p>
-                <a class="text"><small class="text-muted"> Read More</small></a>
+            <div class="row observability">
+              <div class="container">
+                <div>
+                  <h5 class="title">Observability</h5>
+                  <p class="text">With turn-key integrations, Datadog seamlessly aggregates metrics and events across
+                    the
+                    full devops stack</p>
+                  <a class="text"><small class="text-muted"> Read More</small></a>
+                </div>
               </div>
-
 
 
               <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -306,6 +483,7 @@
             </div>
 
           </div>
+
 
 
 
