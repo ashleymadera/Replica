@@ -1,275 +1,384 @@
+  @import url(//db.onlinewebfonts.com/c/0f4e36d040e4e2610f99e59adc22aa6b?family=Copyright+Klim+Type+Foundry);
+      @mixin overlaySettings($color1, $color2, $backgroundUrl){
+        background: linear-gradient($color1, $color2), url( $backgroundUrl );
+        mix-blend-mode: multiply;
+        background-repeat: no-repeat;
+        font-family: "Copyright Klim Type Foundry";
+        max-width: 557px;
+        height: 279px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+      }
+      @mixin tileProperties($backgroundColor){
+        height: 184px;
+        width: 186px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $backgroundColor;
+      }
+      @mixin tileImgSizing($height, $width){
+        height: $height;
+        width: $width;
+      }
+      @mixin fontProperties($fontWeight){
+        font-family: "Copyright Klim Type Foundry";
+        font-weight: $fontWeight;
+
+      }
+     
 
 
-    .side-bar{
-      list-style-type: none;
-      padding-left: 25px;
-    }
+      p{
+        font-size: 28px;
+        width: 391px;
+      }
+      .header-text{
+        width: 362px;
+      }
+      header{
+        font-size: 18px;
+      }
+      .large-tile-text{
+        font-size: 16px;
+        height: 165px;
+        width: 323px;
+      }
+      .text-before-slide{
+        font-size: 28px;
+        height: 102px;
+        width: 433px;
+      }
+      .title{
+        color: #724EEF;
+      }
+      .side-bar{
+        list-style-type: none;
+        padding-left: 25px;
+        color: #fff;
+      }
 
-     .col{
-      padding: 0px;
-    }
+      .col{
+        padding: 0px;
+      }
 
-    .leftHeader {
-      margin: 39px 30px 0 30px;
-      max-width: 362px;
-      min-width: 361px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
+      .leftHeader {
+        margin-top: 39px ;
+        margin-right: 30px;
+        max-width: 362px;
+        min-width: 361px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+     
 
-    .row {
-      margin-bottom: 30px;
-      margin-left: 0;
-      margin-right: 0;
+      .row {
+        margin-bottom: 30px;
+        margin-left: 0;
+        margin-right: 0;
+      }
+      .upper{
+        margin-left: 10px;
+      }
 
-    }
+      .bottom-content{
+        margin: 10px;
+      }
 
-  .bottom-content{
-      margin: 10px;
-    }
-
-    .col-2.content {
-      background-color: #724EEF;
-      margin: 15px;
-      max-width: 166px;
-    }
-
-
-.btn {
-      color: #724EEF;
-      border-color: #724EEF;
-      width: 362px;
-      height: 80px;
-      border-radius: 0;
-      padding: 0;
-    }
-
-    .figure-img.img.rounded {
-      margin: 40px 46px 56px 24px;
-    }
-
- .login {
-      padding: 59px 0 0 24px;
-    }
+      .col-2.content {
+        background-color: #724EEF;
+        margin: 15px;
+        max-width: 166px;
+        padding-left: 0;
+      }
 
 
-  .vl {
-      border-left: 2px solid gray;
-      height: 410px;
-    }
+      .btn {
+        border: 3px solid #724EEF;
+        color: #724EEF;
+        border-color: #724EEF;
+        width: 362px;
+        height: 80px;
+        border-radius: 0;
+        padding: 0;
+      }
 
- .bg-overlay-1 {
-      background: linear-gradient(rgba(20, 208, 113, .8), rgba(20, 208, 113, .8)), url("/images/Screen Shot 2018-11-08 at 3.15.38 PM (1).png");
-      background-repeat: no-repeat;
-      margin: 0;
-      max-width: 557px;
-      height: 300px;
-      display: flex;
-      color: #fff;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
+      .figure-img.img.rounded {
+        margin: 40px 46px 56px 24px;
+      }
 
-   .bg-overlay-2 {
-      background: linear-gradient(rgba(255, 99, 90, .8), rgba(255, 99, 90, .8)), url("/images/Screen Shot 2018-11-08 at 3.12.26 PM (1).png");
-      background-repeat: no-repeat;
-      max-width: 557px;
-      height: 300px;
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin: 0px;
-    }
+     .login {
+        padding: 59px 0 0 24px;
+      }
 
-   .bg-overlay-3 {
-      background: linear-gradient(rgba(43, 42, 167, .8), rgba(43, 42, 167, .8)), url("/images/Screen Shot 2018-11-08 at 3.11.08 PM (1).png");
-      mix-blend-mode: multiply;
-      background-repeat: no-repeat;
-      max-width: 557px;
-      height: 300px;
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin: 0px;
-    }
 
-   .observability {
-      background-color: rgb(245, 245, 245);
-      max-width: 557px;
-    }
+      .vl {
+        border-left: 2px solid gray;
+        height: 410px;
+       }
 
-    .pricing {
-      font-family: "Copyright Klim Type Foundry";
-      background-color: rgb(245, 245, 245);
-      height: 461px;
-      width: 756px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 38px;
-    }
+      .bg-overlay-1 {
+        @include overlaySettings(rgba(20, 208, 113, .8),rgba(20, 208, 113, .8), "/images/Screen Shot 2018-11-08 at 3.15.38 PM (1).png");
+        font-family: "Copyright Klim Type Foundry";
 
-   .package-list {
-      display: flex;
-      justify-content: center;
-      margin-top: 30px;
-      margin-bottom: 0px;
-    }
+        }
 
-    .options {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding: 23px;
-    }
+      .bg-overlay-2 {
+        @include overlaySettings(rgba(255, 99, 90, .8),rgba(255, 99, 90, .8), "/images/Screen Shot 2018-11-08 at 3.12.26 PM (1).png")
+        }
 
-    .text-center{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
+      .bg-overlay-3 {
+        @include overlaySettings(rgba(43, 42, 167, .8),rgba(43, 42, 167, .8), "/images/Screen Shot 2018-11-08 at 3.11.08 PM (1).png")
+        }
 
-.image-bg{
-      background-color: #000;
-    }
+      .observability {
+        font-family: "Copyright Klim Type Foundry";
+        background-color: rgb(245, 245, 245);
+        max-width: 558px;
+        min-width: 557px;
+        height: 585px;
+      }
+      
+      .blog-box{
+        height: 580px;
+       display: flex;
+       flex-direction: column;
+      }
+      .blog-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .top-of-blog-contents{
+       margin-top: 10px;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: space-between;
+       }
+       .text{
+         font-size: 18px;
+       }
 
-  .img-container {
-      background-color: rgb(0, 168, 224);
-      min-height: 184px;
-      max-width: 186px;
-    }
+      .scroll{
+        overflow-x: scroll;
+        display: flex;
+        flex-direction: row;
+        padding: 100px 0px 0px 12px;
+        min-width: 540px;
+        max-width: 548px;
+      }
+      .scroll-img{
+        height: 260px;
+        width: 432px;
+        margin-right: 10px;
+      }
+      .arrow{
+        width: 25.17px;
+        Height: 50.34px;
+      }
+      .price-text{
+      font-size: 16px;
 
- .client-portfolio{
-      /* display: grid; */
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      min-width: 557px;
-      max-width: 570px;
-    }
+      }
+      .pricing {
+        font-family: "Copyright Klim Type Foundry";
+        background-color: rgb(245, 245, 245);
+        height: 461px;
+        width: 756px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 38px;
+      }
 
-   .col-with-box{
-      margin: 0px;
-      padding: 0px;
-    }
+      .package-list {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 0px;
+        height: 461px;
+      }
 
-   .col-with-client {
-      margin: 0px;
-      padding: 0px;
-    }
+      .options {
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 23px;
+      }
+  
+      .details-login{
+        color: #fff;
+      }
+      .details-1{
+        color: rgb(43, 42, 167);
+        text-decoration: underline;
+      }
+      .details-2{
+        color: rgb(20, 208, 113);
+        text-decoration: underline;
 
-   .client-tile {
-      height: 184px;
-      width: 186px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #000;
-    }
+      }
+      .details-3{
+        color: rgb(255, 99, 90);
+        text-decoration: underline;
+      }
+     .opt-1{
+       font-size: 12px;
+      color: rgb(43, 42, 167);
 
-   .client-tile-1 {
-      height: 184px;
-      width: 186px;
-      display: flex;
+     }
+     .opt-2{
+      font-size: 12px;
 
-      justify-content: center;
-      align-items: center;
-      background-color: rgb(255, 90, 95);
-    }
+      color: rgb(20, 208, 113);
 
- .client-tile-2 {
-      height: 184px;
-      width: 186px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: rgb(41, 41, 41);
-    }
+     }
+     .opt-3{
+      font-size: 12px;
 
-  .client-tile-3{
-      height: 184px;
-      width: 186px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: rgb(20, 40, 160);
-    }
+      color: rgb(255, 99, 90);
 
- .client-tile-4 {
-      height: 184px;
-      width: 186px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: rgb(0, 170, 78);
-    }
+     }
+    
+      li{
+        font-family: "Copyright Klim Type Foundry";
+        // color: #fff;
+        font-size: 16px;
+      }
+      .setPrice{
+        font-size: 48px;
+        font-weight: 900;   
+      }
 
-  .client-tile-5 {
-      height: 184px;
-      width: 186px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: rgb(93, 189, 95);
-    }
+      .text-center{
+        font-family: "Copyright Klim Type Foundry";
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
 
-.client-tile-6 {
-      height: 184px;
-      width: 186px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: rgb(0, 0, 0);
-    }
+      .image-bg{
+        background-color: #000;
+      }
 
-    .client-tile-7 {
-      height: 184px;
-      width: 186px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: rgb(0, 168, 224);
-    }
+      .img-container {
+        background-color: rgb(0, 168, 224);
+        min-height: 184px;
+        max-width: 186px;
+      }
 
-   .client-tile-lg {
-      height: 368px;
-      width: 372px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      padding: 24px;
-      background-color: rgb(245, 245, 245);
-    }
+      .client-portfolio{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        min-width: 557px;
+        max-width: 570px;
+      }
 
-   .tile-img {
-      height: 35px;
-      width: 113.16px;
-    }
+      .col-with-box{
+          margin: 0px;
+          padding: 0px;
+        }
 
-   .tile-img-lg {
-      height: 19px;
-      width: 106.16px;
-      margin-bottom: 10px;
-    }
+      .col-with-client {
+          margin: 0px;
+          padding: 0px;
+        }
 
-   .tile-sam-ng {
-      display: flex;
-      flex-direction: row;
-    }
+      .client-tile {
+        @include tileProperties(#000)
+        }
 
-   .tile-whole-att {
-      display: flex;
-      flex-direction: row;
-    }
+      .client-tile-1 {
+        @include tileProperties(rgb(255, 90, 95))
+      
+        }
 
-   .tile-with-client {
-      width: 372px;
-    }
+      .client-tile-2 {
+      @include tileProperties(rgb(41, 41, 41))
+        }
+
+      .client-tile-3{
+        @include tileProperties(rgb(20, 40, 160))
+        }
+
+      .client-tile-4 {
+      @include tileProperties(rgb(0, 170, 78))
+        }
+
+      .client-tile-5 {
+        @include tileProperties(rgb(93, 189, 95))
+        }
+
+      .client-tile-6 {
+      @include tileProperties(rgb(0, 0, 0))
+        }
+
+      .client-tile-7 {
+          @include tileProperties(rgb(0, 168, 224))
+        }
+
+      .client-tile-lg {
+          height: 368px;
+          width: 372px;
+          display: flex;
+          font-family: "Copyright Klim Type Foundry";
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          padding: 24px;
+          background-color: rgb(245, 245, 245);
+        }
+
+      .tile-img-1 {
+      @include tileImgSizing(35px, 113.16px)
+      }
+      .tile-img-2 {
+        @include tileImgSizing(38px, 128px)
+      }
+      .tile-img-3 {
+        @include tileImgSizing(33px, 137px)
+      }
+      .tile-img-4 {
+        @include tileImgSizing(47px, 129px)
+      }
+      .tile-img-5 {
+        @include tileImgSizing(18px, 118px)
+      } 
+      .tile-img-6 {
+        @include tileImgSizing(24px, 137px)
+      }
+      .tile-img-7 {
+        @include tileImgSizing(21px, 97px)
+      }
+      .tile-img-8 {
+        @include tileImgSizing(40px, 100px)
+      }
+
+      .tile-img-lg {
+          height: 19px;
+          width: 106.16px;
+          margin-bottom: 10px;
+        }
+
+      .tile-sam-ng {
+          display: flex;
+          flex-direction: row;
+        }
+
+      .tile-whole-att {
+          display: flex;
+          flex-direction: row;
+        }
+
+      .tile-with-client {
+          width: 372px;
+        }
